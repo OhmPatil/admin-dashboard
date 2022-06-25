@@ -25,3 +25,46 @@
     grid-column: 2/4;
     grid-row: 2/3;
 }
+
+/* Sidebar Stuff */
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+}
+
+.dashboard.item{
+    border: 2px solid green;
+}
+
+.item{
+    display: flex;
+    margin-left: 5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header stuff */
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid springgreen;
+}
+
+.top > *{
+    display: flex;
+}
+
+.bottom{
+    display: flex;
+    border: 2px solid orange;
+}
+
+.bottom > *{
+    display: flex;
+}
