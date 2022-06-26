@@ -1,10 +1,13 @@
+:root{
+    font-family: 'Roboto', sans-serif;
+}
 
 .main-container{
     width: 99.8vw;
     height: 99.5vh;
     border: 2px solid red;
     display: grid;
-    grid-template-columns: 1fr 1fr 4fr;
+    grid-template-columns: repeat(1,minmax(200px,1fr)) 1fr 4fr;
     grid-template-rows: 1fr 5fr;
     gap: 10px;
 }
@@ -31,17 +34,28 @@
 .sidebar{
     display: flex;
     flex-direction: column;
-    gap: 2%;
+    gap: 3%;
+    background-color: #1992D4;
+
 }
 
 .dashboard.item{
-    border: 2px solid green;
+    margin-left: 2%;
+    margin-bottom: 15%;
+    margin-top: 5%;
+    font-size: 1.5rem;
 }
 
 .item{
     display: flex;
     margin-left: 5%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: 5%;
+    font-size: 1.15rem;
+    color: white;
+}
+
+.item > img{
+    filter: invert(1);
 }
 
 /* Header stuff */
