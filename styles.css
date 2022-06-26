@@ -3,18 +3,14 @@
 }
 
 .main-container{
-    width: 99.8vw;
-    height: 99.5vh;
-    border: 2px solid red;
+    width: 100vw;
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(1,minmax(200px,1fr)) 1fr 4fr;
     grid-template-rows: 1fr 5fr;
     /* gap: 10px; */
 }
 
-.main-container > div{
-    border: 2px solid black;
-}
 
 .header{
     grid-column: 2/4;
@@ -174,6 +170,7 @@
     display: flex;
     overflow: auto;
     background-color: #E2E8F0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px inset;
 }
 
 .title-text{
@@ -181,7 +178,6 @@
     padding: 1%;
     padding-left: 2%;
     font-size: 1.25rem;
-
 }
 
 .body-container{
@@ -277,6 +273,7 @@
     padding: 1%;
     padding-left: 2%;
     padding-right: 2%;
+    margin-top: 4.5%;
     height: 100%;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -313,4 +310,8 @@
 .info{
     font-size: 0.9rem;
     color: #636363;
+}
+
+.title-text.no-padding{
+    padding-left: 0%;
 }
