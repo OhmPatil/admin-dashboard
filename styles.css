@@ -212,6 +212,7 @@
 
 .project{
     display: flex;
+    background-color: white;
 }
 
 .card-stripe{
@@ -245,6 +246,8 @@
     height: 15%;
 }
 
+/* Announcement and trending section */
+
 .right-body-container{
     width: 25%;
     display: grid;
@@ -256,10 +259,6 @@
     gap: 3%;
 }
 
-.right-body-container > div{
-    border: 2px solid black;
-}
-
 .announcements{
     display: flex;
     flex-direction: column;
@@ -269,7 +268,49 @@
     display: flex;
     flex-direction: column;
 }
+
 .card{
-    border: 3px solid orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
     height: 100%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+
+}
+
+.announcement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+}
+
+.trending-item{
+    display: flex;
+    width: 95%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5%;
+}
+
+.trending-item > img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.username{
+    font-size: 1rem;
+}
+
+.info{
+    font-size: 0.9rem;
+    color: #636363;
 }
