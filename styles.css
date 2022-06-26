@@ -173,11 +173,15 @@
 .body{
     display: flex;
     overflow: auto;
+    background-color: #E2E8F0;
 }
 
 .title-text{
     display: flex;
-    border: 2px solid yellow;
+    padding: 1%;
+    padding-left: 2%;
+    font-size: 1.25rem;
+
 }
 
 .body-container{
@@ -185,7 +189,6 @@
     display: flex;
     flex-direction: column;
     width: 80%;
-    border: 5px solid pink;
 }
 
 .projects-container{
@@ -198,7 +201,6 @@
     grid-template-rows: repeat(auto-fit, minmax(150px, 200px));
     gap: 2%;
     row-gap: 4%;
-    border: 2px solid brown;
 
 }
 
@@ -227,8 +229,12 @@
     padding: 3%;
 }
 
-.project-desc{
+.project-title{
+    font-size: 1.20rem;
+}
 
+.project-desc{
+    color: #636363;
 }
 
 .actions{
