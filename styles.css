@@ -172,6 +172,7 @@
 /* Body stuff */
 .body{
     display: flex;
+    overflow: auto;
 }
 
 .title-text{
@@ -180,32 +181,69 @@
 }
 
 .body-container{
+    overflow: auto;
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 80%;
     border: 5px solid pink;
 }
 
 .projects-container{
+    overflow: auto;
     display: grid;
     justify-content: center;
     padding: 1%;
     height: 100%;
     grid-template-columns: repeat(auto-fit, minmax(275px, 350px));
     grid-template-rows: repeat(auto-fit, minmax(150px, 200px));
-    gap: 3%;
+    gap: 2%;
+    row-gap: 4%;
     border: 2px solid brown;
 
 }
 
 .projects-container > div{
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+}
+
+.project{
+    display: flex;
+}
+
+.card-stripe{
+    background-color: #F0B429;
+    width: 4%;
+    height: 100%;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+
+.project-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 3%;
+}
+
+.project-desc{
+
+}
+
+.actions{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10%;
+    height: 15%;
 }
 
 .right-body-container{
-    width: 30%;
+    width: 25%;
     display: grid;
-    grid-template-columns: 1fr;
+    justify-content: center;
+    grid-template-columns: repeat(1, minmax(225px, 300px));
     grid-template-rows: 1fr 1fr;
     /* border: 2px solid green; */
     padding: 1%;
