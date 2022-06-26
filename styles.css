@@ -63,22 +63,66 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 1%;
+    
 }
 
 .top{
     display: flex;
     justify-content: space-between;
-    border: 2px solid springgreen;
+    
 }
 
 .top > *{
     display: flex;
+
+}
+
+.search{
+    gap: 2%;
+    align-items: center;
+    width: 60%;
+}
+
+.search > img{
+    height: 60%;
+}
+
+.search > input{
+    background-color: #E2E8F0;
+    border: none;
+    border-radius: 20px;
+    height: 60%;
+    width: 100%;
+}
+
+.notifs{
+    gap: 2rem;
+    align-items: center;
+}
+
+.notifs > img{
+    height: 60%;
+}
+
+.pfp-small{
+    width: 40px;
+    height: 40px;
+    background-image: url("./content/images/darkcatpfp.jpg");
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.name-small{
+    font-size: 1.25rem;
 }
 
 .bottom{
     display: flex;
     border: 2px solid orange;
     justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .bottom > *{
