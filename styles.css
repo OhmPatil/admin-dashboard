@@ -9,7 +9,7 @@
     display: grid;
     grid-template-columns: repeat(1,minmax(200px,1fr)) 1fr 4fr;
     grid-template-rows: 1fr 5fr;
-    gap: 10px;
+    /* gap: 10px; */
 }
 
 .main-container > div{
@@ -43,6 +43,7 @@
     margin-left: 2%;
     margin-bottom: 15%;
     margin-top: 5%;
+    padding-top: 1%;
     font-size: 1.5rem;
 }
 
@@ -64,7 +65,8 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 1%;
-    
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 .top{
@@ -99,6 +101,8 @@
 .notifs{
     gap: 2rem;
     align-items: center;
+    width: 40%;
+    justify-content: flex-end;
 }
 
 .notifs > img{
@@ -119,14 +123,50 @@
 
 .bottom{
     display: flex;
-    border: 2px solid orange;
     justify-content: space-between;
-    margin-left: 5%;
-    margin-right: 5%;
 }
 
 .bottom > *{
     display: flex;
+}
+
+.profile-info{
+    gap: 2%;
+    align-items: center;
+    width: 50%;
+}
+
+.pfp-big{
+    width: 50px;
+    height: 50px;
+    background-image: url("./content/images/darkcatpfp.jpg");
+    background-size: cover;
+    border-radius: 50%;
+
+}
+
+.name-big{
+    font-size: 1.5rem;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    justify-content: flex-end;
+    gap: 5%;
+}
+
+.button{
+    height: 70%;
+    width: 33%;
+    border-radius: 20px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1992D4;
+    color: white;
 }
 
 /* Body stuff */
